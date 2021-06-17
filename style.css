@@ -7,6 +7,23 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/*? TEXT-ALIGN */
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.color-light-grey{
+    color: #7b7e82;
+}
+
 /*= BODY */
 
 .container-fluid{
@@ -16,7 +33,9 @@
 /*? ASIDE-ELEMENTS */
 aside{
     width: 50px;
+    min-width: 50px;
     height: calc(100vh - 90px);
+    position: fixed;
     
     flex-direction: column;
     justify-content: space-between;
@@ -58,12 +77,42 @@ header div.row div.col-12{
 /*? MAIN-ELEMENTS */
 main{
     height: calc(100vh - 180px);
+    width: calc(100% - 50px);
     background-color: #141922;
-
-
-    flex-grow: 1;
+    position: relative;
+    right: -50px;
     align-self: center;
+    padding: 20px;
+    overflow-y: auto;
 }
+
+#main-first-row div{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#main-second-row{
+    text-transform: capitalize;
+ }
+
+ #main-second-row h2{
+    font-size: 20px;
+    margin: 40px 0;
+ }
+
+ div.main-song-box{
+     flex-basis: 200px;
+     margin: 0 10px;
+ }
+
+ #main-second-row img{
+    width: 100%;
+ }
+
+ #main-second-row h3{
+     margin: 25px 0 15px 0;
+ }
 
 /*? FOOTER-ELEMENTS */
 footer{

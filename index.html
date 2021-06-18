@@ -24,8 +24,10 @@
                 
             </div>
             <div class="row" id="nav-last-row"> <!-- INSTALLA E NOME UTENTE -->
-                <img src="./img/download.svg" alt="">
-                <img src="./img/profile.svg" alt="">
+                <img id="download" src="./img/download.svg" alt="download">
+                <div id="profile-box">
+                    <img id="profile" src="./img/profile.svg" alt="profile">
+                </div>
             </div>
         </nav>
         <header class="display-flex" >
@@ -109,7 +111,43 @@
             </div>
         </main>
         <footer class="display-flex">
-
+            <div class="row">
+                  <div class="footer-song-box">
+                      <img src="./img/sinister.jpeg" alt="">    
+                  </div>
+                  <div>
+                    <h3 class="color-white">Sinister</h3>
+                    <div class="color-light-grey">Brano Nome</div>
+                  </div>
+                  <div>
+                    <i id="cuore" class="far fa-heart color-light-grey display-block"></i>
+                    <i class="far fa-folder color-light-grey"></i>
+                  </div>
+                  <div id="footer-middle-col" class="col">
+                      <div class="color-white">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle fa-2x"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo"></i>
+                      </div>
+                      <div>
+                           <span class="color-white">0:25</span>
+                           <div class="video-volume-bar bg-color-grey display-inline-block">
+                            <div class="shorter-inside-bar"></div>
+                           </div>
+                           <span class="color-white">4:35</span>
+                      </div>
+                  </div>
+                  <div id="footer-last-col">
+                         <i class="fas fa-list display-inline-block color-white"></i>
+                         <i class="fas fa-desktop display-inline-block color-white"></i>
+                         <i class="fas fa-volume-up display-inline-block color-white"></i>
+                         <div id="last-bar" class="video-volume-bar display-inline-block bg-color-grey">
+                             <div class="shorter-inside-bar"></div>
+                         </div>
+                  </div>
+            </div>
         </footer>
     </div>
 </body>

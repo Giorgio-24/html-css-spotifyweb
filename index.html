@@ -14,19 +14,33 @@
 <body>
     <div class="container-fluid display-flex">
         <nav class="display-flex bg-color-black">
-            <div class="row"> <!-- DA LOGO A LIBRERIA (SU MOBILE VUOTA) -->
-                 <div class="col-12"><img src="./img/logo-small.svg" alt="logo-spotify"></div>
-                 <div class="col-12"><img src="./img/home.svg" alt="home"></div>
-                 <div class="col-12"><img src="./img/search.svg" alt="cerca"></div>
-                 <div class="col-12"><img src="./img/libreria.svg" alt="libreria"></div>
+            <div class="row color-white"> <!-- DA LOGO A LIBRERIA (SU MOBILE VUOTA) -->
+                 <div id="big-logo-box" class="mobile-display-none-to-block"><img id="big-logo" src="./img/logo.svg" alt="spotify-logo"></div>
+                 <div class="display-flex align-items-center bigger-devices-display-none"><img src="./img/logo-small.svg" alt="small-spotify-logo"></div>
+                 <div class="display-flex align-items-center"><img src="./img/home.svg" alt="home"><div class="mobile-display-none-to-inline-block">Home</div></div>
+                 <div class="display-flex align-items-center"><img src="./img/search.svg" alt="cerca"><div class="mobile-display-none-to-inline-block">Cerca</div></div>
+                 <div class="display-flex align-items-center"><img src="./img/libreria.svg" alt="libreria"><div class="mobile-display-none-to-inline-block">La tua libreria</div></div>
             </div>
-            <div class="row"> <!-- PLAYLIST -->
-                
+            <div id="nav-second-row" class="row mobile-display-none-to-block color-light-grey"> <!-- PLAYLIST -->
+                <h2>Playlist</h2>
+                <div class="display-flex align-items-center"><i id="nav-plus-icon" class="fas fa-plus fa-2x color-black"></i> Crea playlist</div>
+                <div>Nome playlist</div>
+                <div>Nome playlist</div>
+                <div>Nome playlist</div>
+                <div>Nome playlist</div>
+                <div>Nome playlist</div>
+                <div>Nome playlist</div>
+                <div>Nome playlist</div>
             </div>
             <div class="row" id="nav-last-row"> <!-- INSTALLA E NOME UTENTE -->
-                <img id="download" src="./img/download.svg" alt="download">
-                <div id="profile-box">
+                <div id="download-box" class="display-flex align-items-center">
+                    <img id="download" src="./img/download.svg" alt="download">
+                    <div class="mobile-display-none-to-inline-block color-light-grey">Installa app</div>    
+                </div>
+                <hr class="mobile-display-none-to-block">
+                <div id="profile-box" class="display-flex align-items-center">
                     <img id="profile" src="./img/profile.svg" alt="profile">
+                    <div class="mobile-display-none-to-inline-block color-white">John Doe</div>
                 </div>
             </div>
         </nav>

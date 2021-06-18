@@ -1,3 +1,5 @@
+/*! ATTENZIONE! QUESTA E' LA COPIA DELLA MIA LIBRERIA,
+SE DEVI MODIFICARE QUALCOSA FALLO SU QUELLA ORIGINALE */
 
 /*= GENERAL UTILITIES*/
 *{
@@ -220,6 +222,10 @@
 
 .space-evenly{
     justify-content: space-evenly;
+}
+
+.align-items-center{
+    align-items: center;
 }
 
 .order-1{

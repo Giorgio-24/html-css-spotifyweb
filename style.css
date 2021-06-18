@@ -49,10 +49,38 @@ nav{
     justify-content: space-between;
 }
 
+#big-logo-box{
+    height: 90px;
+}
+
+#big-logo{
+    width: 80%;
+    height: 100%;
+}
+
 nav img{
     padding: 5px 10px;
 }
 
+#nav-second-row{
+    font-weight: 600;
+    overflow: auto;
+}
+
+#nav-second-row *{
+    margin: 25px 10px;
+}
+
+#nav-plus-icon{
+    margin: 0;
+    padding: 10px;
+    background-color: grey;
+    margin-right: 10px;
+}
+
+#nav-last-row{
+    flex-direction: column;
+}
 
 #nav-last-row img{
     margin: 10px 0;
@@ -126,7 +154,7 @@ main{
  }
 
  div.main-song-box{
-     flex-basis: 200px;
+     flex-basis: 184px;
      margin: 40px 10px 0;
  }
 
@@ -191,3 +219,75 @@ footer div:nth-of-type(2){
 #last-bar{
     width: 85px;
 }
+
+/*= MEDIA-QUERIES */
+
+.mobile-display-none-to-block{
+    display: none;
+}
+
+.mobile-display-none-to-inline-block{
+    display: none;
+}
+
+@media screen and ( min-width:576px) {
+/*? GENERALS */
+.mobile-display-none-to-block{
+    display: block;
+}
+
+.mobile-display-none-to-inline-block{
+    display: inline-block;
+}
+
+.bigger-devices-display-none {
+    display: none;
+}
+
+/*? NAV */
+nav{
+     width: 230px;
+     /*  overflow-y: auto; */
+}
+
+nav img {
+    width: 25%;
+    display: inline-block;
+}
+
+#profile{
+    height: 100%;
+    width: 15%;
+}
+
+#profile-box{
+    margin: 0 0 5px 6px;
+}
+
+#profile-box div{
+    margin-left: 10px;
+}
+
+
+#nav-last-row img{
+margin: 0;
+}
+
+/*? HEADER */
+header{
+    width: calc(100% - 230px);
+}
+
+/*? MAIN */
+main{
+    width: calc(100% - 230px);
+    right: -230px;
+}
+
+/*? FOOTER */
+#cuore{
+    display: inline;
+}
+/*! FINE MEDIA QUERY <576PX */
+}
+

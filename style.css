@@ -1,5 +1,7 @@
 /*= GENERAL UTILITIES*/
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
 *{
     margin:0;
     padding:0;
@@ -113,7 +115,6 @@ header{
     position:fixed;
     right: 0;
     background-color: #080b12;
-    background-color: red;
     text-transform: uppercase;
     
     justify-content: flex-end;
@@ -160,6 +161,10 @@ main{
  #main-second-row h2{
     font-size: 20px;
     margin: -44px 0 20px;
+ }
+
+ .img-position-box{
+     position: relative;
  }
 
  #main-second-row div.main-song-box{
@@ -233,6 +238,23 @@ footer div:nth-of-type(2){
     width: 20%;
     border-radius: 20px;
     background-color: #c1c1c1;
+}
+
+/*= HOVER EFFECTS */
+
+.play-circle{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*! CREARE NEL HTML UN ALTRO DIV PER L'HOVER NERO OPACO PERCHE CON IL PADDING IN PERCENTUALE VIENE SPRECISO*/ 
+    /*!E DA DARE FONT-SIZE 32PX ALL'ICON DI STRANGER THINGS PERCHE EREDITA IL FONT DAL PADRE ED E' PIU PICCOLO*/
+}
+
+.play-circle:hover{
+    
 }
 
 #last-bar{

@@ -35,6 +35,11 @@ SE DEVI MODIFICARE QUALCOSA FALLO SU QUELLA ORIGINALE */
 }
 
 /*? DISPLAYS */
+
+.display-none{
+    display: none;
+}
+
 .display-inline{
     display: inline;
 }

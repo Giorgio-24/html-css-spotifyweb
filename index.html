@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid display-flex">
         <nav class="display-flex bg-color-black">
-            <div class="row color-white"> <!-- DA LOGO A LIBRERIA (SU MOBILE VUOTA) -->
+            <div id="nav-first-row" class="row color-light-grey"> <!-- DA LOGO A LIBRERIA (SU MOBILE VUOTA) -->
                  <div id="big-logo-box" class="mobile-display-none-to-block"><img id="big-logo" src="./img/logo.svg" alt="spotify-logo"></div>
                  <div class="display-flex align-items-center bigger-devices-display-none"><img src="./img/logo-small.svg" alt="small-spotify-logo"></div>
                  <div class="display-flex align-items-center"><img src="./img/home.svg" alt="home"><div class="mobile-display-none-to-inline-block">Home</div></div>
@@ -22,7 +22,7 @@
                  <div class="display-flex align-items-center"><img src="./img/libreria.svg" alt="libreria"><div class="mobile-display-none-to-inline-block">La tua libreria</div></div>
             </div>
             <div id="nav-second-row" class="row mobile-display-none-to-block color-light-grey"> <!-- PLAYLIST -->
-                <h2>Playlist</h2>
+                <h2 class="color-white">Playlist</h2>
                 <div class="display-flex align-items-center"><i id="nav-plus-icon" class="fas fa-plus fa-2x color-black"></i> Crea playlist</div>
             </div>
             <div id="playlist-name-scroll" class="row mobile-display-none-to-block color-light-grey">
@@ -66,7 +66,8 @@
                     <div class="main-song-box">
                         <div class="img-position-box" >
                             <img src="./img/metal_lifting.jpg" alt="">
-                            <i class=" play-circle far fa-play-circle fa-2x"></i>
+                            <div class="img-black-hover display-none"></div>
+                            <i class=" play-circle far fa-play-circle fa-4x display-none"></i>
                         </div>
                         
                         <h3>heavy metal</h3>
@@ -75,7 +76,8 @@
                     <div id="stranger-things" class="main-song-box">
                         <div class="img-position-box" >
                             <img src="./img/stranger.jpeg" alt="">
-                            <i class=" play-circle far fa-play-circle fa-2x"></i>
+                            <div class="img-black-hover display-none"></div>
+                            <i id="stranger-things-icon" class=" play-circle far fa-play-circle fa-4x display-none"></i>
                         </div>
                         
                         <h3>stranger things,vol. 1 {a netflix original series soundtrack}</h3>
@@ -84,7 +86,8 @@
                     <div class="main-song-box">
                         <div class="img-position-box" >
                             <img src="./img/aquietplace.jpeg" alt="">
-                            <i class=" play-circle far fa-play-circle fa-2x"></i>
+                            <div class="img-black-hover display-none"></div>
+                            <i class=" play-circle far fa-play-circle fa-4x display-none"></i>
                         </div>
                         
                         <h3>A quiet place</h3>
@@ -93,7 +96,8 @@
                     <div class="main-song-box">
                         <div class="img-position-box" >
                             <img src="./img/split.jpeg" alt="">
-                            <i class=" play-circle far fa-play-circle fa-2x"></i>
+                            <div class="img-black-hover display-none"></div>
+                            <i class=" play-circle far fa-play-circle fa-4x display-none"></i>
                         </div>
                         
                         <h3>split</h3>
@@ -102,7 +106,8 @@
                     <div class="main-song-box">
                         <div class="img-position-box" >
                             <img src="./img/cure.jpeg" alt="">
-                            <i class=" play-circle far fa-play-circle fa-2x"></i>
+                            <div class="img-black-hover display-none"></div>
+                            <i class=" play-circle far fa-play-circle fa-4x display-none"></i>
                         </div>
                         
                         <h3>A cure for welness</h3>
@@ -111,7 +116,8 @@
                     <div class="main-song-box">
                         <div class="img-position-box" >
                             <img src="./img/sinister.jpeg" alt="">
-                            <i class=" play-circle far fa-play-circle fa-2x"></i>
+                            <div class="img-black-hover display-none"></div>
+                            <i class=" play-circle far fa-play-circle fa-4x display-none"></i>
                         </div>
 
                         <h3>sinister</h3>
@@ -159,7 +165,7 @@
                     <h3 class="color-white">Sinister</h3>
                     <div class="color-light-grey">Brano Nome</div>
                   </div>
-                  <div>
+                  <div id="footer-icon-box">
                     <i id="cuore" class="far fa-heart color-light-grey display-block"></i>
                     <i class="far fa-folder color-light-grey"></i>
                   </div>
@@ -174,7 +180,8 @@
                       <div>
                            <span class="color-white">0:25</span>
                            <div class="video-volume-bar bg-color-grey display-inline-block">
-                            <div class="shorter-inside-bar"></div>
+                                <div class="shorter-inside-bar"></div>
+                                <div class="shorter-bar-cursor"></div>
                            </div>
                            <span class="color-white">4:35</span>
                       </div>
@@ -185,6 +192,7 @@
                          <i class="fas fa-volume-up display-inline-block color-white"></i>
                          <div id="last-bar" class="video-volume-bar display-inline-block bg-color-grey">
                              <div class="shorter-inside-bar"></div>
+                             <div class="shorter-bar-cursor"></div>
                          </div>
                   </div>
             </div>

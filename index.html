@@ -17,9 +17,9 @@
             <div id="nav-first-row" class="row color-light-grey"> <!-- DA LOGO A LIBRERIA (SU MOBILE VUOTA) -->
                  <div id="big-logo-box" class="mobile-display-none-to-block"><img id="big-logo" src="./img/logo.svg" alt="spotify-logo"></div>
                  <div class="display-flex align-items-center bigger-devices-display-none"><img src="./img/logo-small.svg" alt="small-spotify-logo"></div>
-                 <div class="display-flex align-items-center"><img src="./img/home.svg" alt="home"><div class="mobile-display-none-to-inline-block">Home</div></div>
-                 <div class="display-flex align-items-center"><img src="./img/search.svg" alt="cerca"><div class="mobile-display-none-to-inline-block">Cerca</div></div>
-                 <div class="display-flex align-items-center"><img src="./img/libreria.svg" alt="libreria"><div class="mobile-display-none-to-inline-block">La tua libreria</div></div>
+                 <div class="display-flex align-items-center"><div class="vertical-green-bar mobile-display-none-to-block"></div><img src="./img/home.svg" alt="home"><div class="mobile-display-none-to-inline-block">Home</div></div>
+                 <div class="display-flex align-items-center"><div class="vertical-green-bar mobile-display-none-to-block"></div><img src="./img/search.svg" alt="cerca"><div class="mobile-display-none-to-inline-block">Cerca</div></div>
+                 <div class="display-flex align-items-center"><div class="vertical-green-bar mobile-display-none-to-block"></div><img src="./img/libreria.svg" alt="libreria"><div class="mobile-display-none-to-inline-block">La tua libreria</div></div>
             </div>
             <div id="nav-second-row" class="row mobile-display-none-to-block color-light-grey"> <!-- PLAYLIST -->
                 <h2 class="color-white">Playlist</h2>
@@ -54,14 +54,14 @@
         <main class="display-flex color-white text-align-center">
             <div id="main-content" class="row">
                 <div id="main-first-row" class="row color-light-grey"><!-- PRIMA ROW, DA "IN EVIDENZA" FINO A "SCOPRI" -->
-                    <div class="">in evidenza</div>
-                    <div class="">podcast</div>
-                    <div class="">classifiche</div>
-                    <div class="">generi e mood</div>
-                    <div class="">nuove uscite</div>
-                    <div class="">scopri</div>
+                    <div class="">in evidenza<div class="horizontal-green-bar"></div></div>
+                    <div class="">podcast<div class="horizontal-green-bar"></div></div>
+                    <div class="">classifiche<div class="horizontal-green-bar"></div></div>
+                    <div class="">generi e mood<div class="horizontal-green-bar"></div></div>
+                    <div class="">nuove uscite<div class="horizontal-green-bar"></div></div>
+                    <div class="">scopri<div class="horizontal-green-bar"></div></div>
                 </div>
-                <h2 id="recently-played">Recently Played</h2>
+                <h2 id="recently-played font-size-30px">Recently Played</h2>
                 <div id="main-second-row" class="row"><!-- SECONDA ROW, ASCOLTATE DI RECENTE -->
                     <div class="main-song-box">
                         <div class="img-position-box" >
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div id="third-row" class="row"><!-- TERZA ROW, CREATO PER -->
-                    <div class="col-12 text-align-left"><h2>Creato per John Doe</h2>
+                    <div class="col-12 text-align-left"><h2 class="font-size-30px">Creato per John Doe</h2>
                         <span class="color-light-grey">Più ascolti, più accurati saranno i suggerimenti</span></div>
                     
                     <div class="row">
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div id="fourth-row" class="row"><!-- QUARTA ROW, ARTISTI PIU POPOLARI -->
-                    <div class="col-12 text-align-left"><h2>Creato per John Doe</h2>
+                    <div class="col-12 text-align-left"><h2 class="font-size-30px">Artisti più popolari</h2>
                         <span class="color-light-grey">Più ascolti, più accurati saranno i suggerimenti</span></div>
                     
                     <div class="row">
@@ -166,8 +166,9 @@
                     <div class="color-light-grey">Brano Nome</div>
                   </div>
                   <div id="footer-icon-box">
-                    <i id="cuore" class="far fa-heart color-light-grey display-block"></i>
-                    <i class="far fa-folder color-light-grey"></i>
+                    <i id="cuore" class="far fa-heart color-light-grey mobile-display-block-to-inline"></i>
+                    <i id="cuore-pieno" class="fas fa-heart mobile-display-none-to-block-768px"></i>
+                    <i id="cartella" class="far fa-folder color-light-grey"></i>
                   </div>
                   <div id="footer-middle-col" class="col">
                       <div class="color-white">

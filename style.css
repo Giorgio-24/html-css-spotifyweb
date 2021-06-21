@@ -207,6 +207,7 @@ main::-webkit-scrollbar-track {
  #main-second-row div.main-song-box{
     flex-basis: 184px;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 #stranger-things-icon{
@@ -352,6 +353,10 @@ cursor: pointer;
     transform: translate(-50%, -50%);
 }
 
+.img-position-box:hover{
+    bottom: 15px;
+}
+
 .img-black-hover{/* E' IL NOME DELLA CLASSE, IL SUO EFFETTO HOVER E' PIU SOTTO */
     background-color: rgba(0,0,0,0.5);
     position: absolute;
@@ -422,6 +427,10 @@ cursor: pointer;
 
 .video-volume-bar:hover .shorter-bar-cursor{
     display: block;
+}
+
+#footer-last-col{
+    margin: 0 auto;
 }
 
 /*= MEDIA-QUERIES */
@@ -503,10 +512,10 @@ main{
 }
 
 /*? FOOTER */
-
 #footer-middle-col div.color-white:first-of-type{
     margin: -10px 0 10px;
 }
+
 /*! FINE MEDIA QUERY ≥576PX */
 }
 
@@ -515,6 +524,7 @@ main{
     .mobile-display-none-to-block-768px{
         display: block;
     }
+
 /* ? FOOTER */
 #cuore-pieno{/* ELEMENTO */
     color: #ff4033;
@@ -541,7 +551,7 @@ main{
 }
 
 @media screen and ( min-width:992px) {
-    /*? MAIN */
+/*? MAIN */
 #stranger-things{
     font-size: 82%;
 }

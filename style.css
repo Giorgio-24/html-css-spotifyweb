@@ -51,6 +51,7 @@ nav{
     width: 50px;
     min-width: 50px;
     height: calc(100vh - 90px);
+    min-height: 540px;
     position: fixed;
     
     flex-direction: column;
@@ -70,10 +71,18 @@ nav img{
     padding: 5px 10px;
 }
 
+#playlist-name-scroll ul{
+list-style-type: none;
+}
+
 #nav-second-row *,
-#playlist-name-scroll *{
+#playlist-name-scroll ul{
     margin: 20px 20px;
     font-weight: 600;
+}
+
+#playlist-name-scroll li{
+    margin: 20px 0;
 }
 
 #playlist-name-scroll{
@@ -289,9 +298,9 @@ footer div:nth-of-type(2){
 
 /*= HOVER EFFECTS */
 /*? NAV */
-#nav-first-row *:hover,
+#nav-first-row li:hover,
 #nav-second-row  div:hover,
-#playlist-name-scroll div:hover,
+#playlist-name-scroll li:hover,
 #download-box:hover *{
     color: #fff;
     cursor: pointer;
@@ -307,7 +316,7 @@ footer div:nth-of-type(2){
     visibility: hidden;
 }
 
-#nav-first-row *:hover .vertical-green-bar{
+#nav-first-row li:hover .vertical-green-bar{
     visibility: visible;
 }
 
